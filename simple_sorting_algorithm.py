@@ -33,4 +33,15 @@ for i in range(0, n):
             arr[i] = arr[j]
             arr[j] = temp
 
-print("Sorted Array: ", arr)
+print("Sorted Array in Ascending Order: ", arr)
+
+# Sorting Array in Descending Order
+for i in range(0, n):
+    j = i+1
+    for j in range(0, n):
+        if arr[j] < arr[i]:
+            temp = arr[i]
+            arr[i] = arr[j]
+            arr[j] = temp
+
+print("Sorted Array in Descending Order: ", arr)
