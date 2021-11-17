@@ -21,11 +21,16 @@ print("Unsorted Array", arr)
 # Function for bubble sort
 def bubble_sort(ar, num):
     for i in range(num - 1):
+        flag = 0
         for j in range(num - 1 - i):
             if ar[j] > ar[j + 1]:
                 temp = ar[j]
                 ar[j] = ar[j + 1]
                 ar[j + 1] = temp
+                flag = 1
+        if flag == 0:
+            #print("Flagged")
+            break
 
 
 bubble_sort(arr, n)
